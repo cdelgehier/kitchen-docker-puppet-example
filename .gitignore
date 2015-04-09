@@ -1,0 +1,6 @@
+.kitchen/
+.librarian/
+.tmp/
+Gemfile.lock
+Puppetfile.lock
+modules/
