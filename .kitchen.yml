@@ -17,6 +17,13 @@ platforms:
       platform: centos 
       use_cache: true
       dockerfile: centos-latest-dockerfile
+  - name: centos-6.6
+    driver_config:
+      image: centos:6.6
+      platform: centos 
+      use_cache: true
+      dockerfile: centos-6.6-dockerfile
+
 
 
 suites:
