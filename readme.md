@@ -13,6 +13,23 @@ Prerequisites
 - Ruby > 2.0
 - Bundler
 
+```
+.
+├── centos-latest-dockerfile
+├── Gemfile
+├── hiera.yml
+├── manifests
+│   └── site.pp
+├── Puppetfile
+├── readme.md
+└── test
+    └── integration
+        └── default
+            ├── bats
+            │   └── ntp_installed.bats
+            └── serverspec
+                └── ntp_daemon_spec.rb
+```
 Get cooking !
 =============
 
