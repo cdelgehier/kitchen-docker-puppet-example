@@ -1,0 +1,24 @@
+driver:
+  name: docker
+
+provisioner:
+  name: puppet_apply
+  manifests_path: manifests
+  modules_path: modules
+  hiera_data_path: hieradata
+  #hiera_config_path: hiera.yml
+  #resolve_with_librarian_puppet: true
+
+
+platforms:
+  - name: centos-latest
+    driver_config:
+      image: centos:latest
+      platform: centos 
+      use_cache: true
+      dockerfile: centos-latest-dockerfile
+
+
+suites:
+  - name: default
+    manifest: site.pp
