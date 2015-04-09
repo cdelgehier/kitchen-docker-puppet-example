@@ -16,6 +16,7 @@ Prerequisites
 ```
 .
 ├── centos-latest-dockerfile
+├── centos-6.6-dockerfile
 ├── Gemfile
 ├── hiera.yml
 ├── manifests
@@ -95,8 +96,8 @@ Cook with container
 
 ...
 ```
-$> cat << FIN >> centos-latest-dockerfile
-FROM centos:latest
+$> cat << FIN >> centos-6.6-dockerfile
+FROM centos:6.6
 RUN yum clean all
 RUN yum install -y sudo openssh-server openssh-clients which curl htop
 RUN ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key
@@ -133,6 +134,13 @@ platforms:
       use_cache: true
       dockerfile: centos-latest-dockerfile
       #socket: <%= ENV['DOCKER_HOST'] %>
+  - name: centos-6.6
+    driver_config:
+      image: centos:6.6
+      platform: centos 
+      use_cache: true
+      dockerfile: centos-6.6-dockerfile
+
 
 suites:
   - name: default
