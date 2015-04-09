@@ -1,10 +1,10 @@
 Kitchen / Docker / Puppet
 ===================
 
-After several years trying to make its own configuration management tool, my organization has decided to look at the side of **Puppetlabs**.
-The model described is a hierarchical tree whose **Role-Based Access Control**[^RBAC] will manage by **Git** hooks. This is the masterless mode was selected (no SPOF, finer control configuration applied to servers).
+After several years trying to make its own configuration management tool, my 	company has decided to look at **Puppetlabs**.
+The model described is a hierarchical tree whose **Role-Based Access Control**[^RBAC] will manage by **Git** hooks. This is the masterless mode was selected (no SPOF, thin control configuration applied to servers).
 
-**Fabric** will surely be used to orchestrate the push towards the nodes.
+**Fabric** will surely be used to orchestrate the push to nodes.
 
 Prerequisites
 =============
