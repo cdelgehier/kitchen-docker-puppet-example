@@ -15,7 +15,6 @@ Prerequisites
 
 ```
 .
-├── centos-latest-dockerfile
 ├── centos-6.6-dockerfile
 ├── Gemfile
 ├── hiera.yml
@@ -200,8 +199,8 @@ FIN
 ```
 $> bundle install
 $> kitchen list
-$> kitchen converge default-centos-latest
-$> kitchen verify
+$> kitchen converge default-centos-66
+$> kitchen verify default-centos-66
 ```
 
 
